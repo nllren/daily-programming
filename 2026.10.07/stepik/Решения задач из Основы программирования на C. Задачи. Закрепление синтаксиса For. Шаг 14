@@ -1,0 +1,24 @@
+//Решения задач из Основы программирования на C. Задачи. Закрепление синтаксиса For. Шаг 14
+
+#include <stdio.h>
+
+int main(void) {
+    int n;
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        int p;
+       
+        scanf("%d", &p);
+
+        
+        for (int j = 0; j < p; j++) {
+            printf("*");
+        }
+
+        
+        printf("\n");
+    }
+
+    return 0;
+}

@@ -1,0 +1,36 @@
+//Решения задач из Основы программирования на C. Задачи. Закрепление синтаксиса For. Шаг 15
+//Напишите программу, которая выводит на экран начальное состояние поля для битвы.
+
+#include <stdio.h>
+
+int main(void) {
+    int h, w;
+    int x1, y1;
+    int x2, y2;
+
+   
+    scanf("%d %d", &h, &w);
+    scanf("%d %d", &x1, &y1);
+    scanf("%d %d", &x2, &y2);
+
+    
+    for (int row = 0; row < h; row++) {
+        
+        
+        for (int col = 0; col < w; col++) {
+            
+            if (col == x1 && row == y1) {
+                printf("H");
+            } else if (col == x2 && row == y2) {
+                printf("E");
+            } else {
+                printf(".");
+            }
+        }
+        
+       
+        printf("\n");
+    }
+
+    return 0;
+}
